@@ -1,0 +1,115 @@
+@import "fonts";
+@import "global";
+@import "vars";
+
+.header {
+  height: 100px;
+  background: linear-gradient(180deg, rgba(33, 33, 33, 0.5) 0%, rgba(33, 33, 33, 0.475) 12.5%, rgba(33, 33, 33, 0.45) 25.52%, rgba(33, 33, 33, 0.425) 38.54%, rgba(33, 33, 33, 0.4) 49.48%, rgba(33, 33, 33, 0.375) 61.46%, rgba(33, 33, 33, 0) 100%);
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Roboto-Light', sans-serif;
+  color: $g-dark;
+  font-size: 20px;
+  &-logo{
+    padding: 17px 0;
+    img {
+      width: 196px;
+      height: 66px;
+    }
+  }
+  li {
+    display: inline-block;
+  }
+
+  a {
+    color: $g-dark;
+  }
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 963px;
+  min-height: 56px;
+
+  &-btn {
+    padding-bottom: 15px;
+    li {
+      padding: 6px 15px;
+      border: 1px solid $g-dark;
+      border-radius: 132px;
+
+      & + li {
+        margin-left: 26px;
+      }
+    }
+  }
+
+  &-contacts {
+    margin-left: 26px;
+    position: relative;
+    span {
+      display: block;
+    }
+  }
+  &-address {
+    font-size: 17px;
+    padding-bottom: 13px;
+    margin-right: 260px;
+    position: static;
+    top: 13px;
+    &::before {
+      content: '';
+      background-image: url(../images/icons/map.png);
+      width: 23px;
+      height: 36px;
+      position: absolute;
+      top: 16px;
+      left: 10px;
+    }
+  }
+
+  &-number {
+    text-align: center;
+    margin-left: 24px;
+    position: absolute;
+    padding-bottom: 11px;
+    width: 230px;
+    top: 26px;
+    right: 0;
+    transition: all .3s;
+    div {
+      font-family: 'Roboto-Light', sans-serif;
+      font-size: 15px;
+      //display: none;
+      height: 0;
+      overflow: hidden;
+      cursor: default;
+    }
+    a {
+      font-family: 'Roboto-Regular', sans-serif;
+      font-size: 28px;
+    }
+    &:hover {
+      top: 14px;
+      a{
+        transition: all .3s;
+        border-bottom: 1.5px dashed $g-dark;
+      }
+      div {
+        //display: block;
+        height: 18px;
+        transition: all .2s;
+        overflow: visible;
+        position: absolute;
+        right: 22px;
+        bottom: -12px;
+      }
+    }
+  }
+}
