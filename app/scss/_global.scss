@@ -6,6 +6,13 @@ html{
 *::after{
   box-sizing: inherit;
 }
+body{
+  background-image: url(../images/body-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 850px;
+}
 a{
   display: inline-block;
   text-decoration: none;

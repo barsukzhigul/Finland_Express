@@ -1,26 +1,35 @@
-@import "fonts";
-@import "global";
-@import "vars";
+@import "_fonts";
+@import "_vars";
+@import "_global";
 
 .header {
   height: 100px;
-  background: linear-gradient(180deg, rgba(33, 33, 33, 0.5) 0%, rgba(33, 33, 33, 0.475) 12.5%, rgba(33, 33, 33, 0.45) 25.52%, rgba(33, 33, 33, 0.425) 38.54%, rgba(33, 33, 33, 0.4) 49.48%, rgba(33, 33, 33, 0.375) 61.46%, rgba(33, 33, 33, 0) 100%);
+  font-weight: 300;
+  background: linear-gradient(180deg, rgba(37, 38, 38, 0.9) 0%, rgba(37, 38, 38, 0.855) 14.58%, rgba(37, 38, 38, 0.81) 28.65%, rgba(37, 38, 38, 0.765) 43.75%, rgba(37, 38, 38, 0.72) 60.94%, rgba(37, 38, 38, 0.675) 78.65%, rgba(37, 38, 38, 0) 100%);
+  width: 100%;
+  position: fixed;
+  top: 0;
 }
 
 .header__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Roboto-Light', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  position: fixed;
+  top: 0;
   color: $g-dark;
   font-size: 20px;
-  &-logo{
+
+  &-logo {
     padding: 17px 0;
+
     img {
       width: 196px;
       height: 66px;
     }
   }
+
   li {
     display: inline-block;
   }
@@ -39,6 +48,7 @@
 
   &-btn {
     padding-bottom: 15px;
+
     li {
       padding: 6px 15px;
       border: 1px solid $g-dark;
@@ -53,16 +63,19 @@
   &-contacts {
     margin-left: 26px;
     position: relative;
+
     span {
       display: block;
     }
   }
+
   &-address {
     font-size: 17px;
     padding-bottom: 13px;
     margin-right: 260px;
     position: static;
     top: 13px;
+
     &::before {
       content: '';
       background-image: url(../images/icons/map.svg);
@@ -83,24 +96,29 @@
     top: 26px;
     right: 0;
     transition: all .3s;
+
     div {
-      font-family: 'Roboto-Light', sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-size: 15px;
       //display: none;
       height: 0;
       overflow: hidden;
       cursor: default;
     }
+
     a {
-      font-family: 'Roboto-Regular', sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-size: 28px;
     }
+
     &:hover {
       top: 14px;
-      a{
+
+      a {
         transition: all .3s;
         border-bottom: 1.5px dashed $g-dark;
       }
+
       div {
         //display: block;
         height: 18px;
@@ -111,5 +129,103 @@
         bottom: -12px;
       }
     }
+  }
+}
+
+
+.main__inner {
+  padding-top: 100px;
+  padding-bottom: 168px;
+}
+
+.main__title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 55px;
+  font-weight: 400;
+  color: $g-light;
+  max-width: 900px;
+  padding-bottom: 40px;
+}
+
+.main__info {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 32px;
+  color: #F3F3F3;
+  line-height: 40px;
+  margin-bottom: 100px;
+
+  span {
+    display: block;
+  }
+}
+
+.button__border {
+  padding: 8px;
+  border: 1px solid rgba(220, 172, 100, 0.26);
+  box-shadow: 0 0 10px #DCAC64;
+  max-width: 412px;
+  border-radius: 70px;
+  margin-bottom: 10px;
+}
+
+.main__button {
+  display: inline-block;
+  background: $g-dark;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 70px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #F3F3F3;
+  font-size: 21px;
+  padding: 20px 74px;
+}
+
+.contact__details {
+  max-width: 310px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #D2D2D2;
+  margin-left: 35px;
+}
+
+.clients {
+  background-color: $bg;
+  box-shadow: inset 0px 0px 5px 5px rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+.clients__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.clients__item{
+  margin-top: 68px;
+}
+.clients__title {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 300;
+  font-size: 70px;
+  color: $g-light;
+  //line-height: 88px;
+  //margin-bottom: 16px;
+  & + .clients__title{
+    //margin-bottom: 4px;
+  }
+}
+.clients__description{
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 300;
+  line-height: 23px;
+  font-size: 18px;
+  color: $g-light;
+  margin-bottom: 67px;
+  span{
+    display: block;
   }
 }
