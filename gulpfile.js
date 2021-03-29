@@ -38,7 +38,14 @@ gulp.task('script', function(){
         .pipe(uglify())
         .pipe(gulp.dest('app/js'))
 })
-
+gulp.task('scriptmin', function () {
+    return gulp.src([
+        'app/js/main.js'
+    ])
+        .pipe(concat('main.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('app/js'))
+})
 gulp.task('html', function () {
     return gulp.src('app/*.html')
         .pipe(browserSync.reload({stream: true}))
