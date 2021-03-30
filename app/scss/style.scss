@@ -409,3 +409,43 @@ body{
   }
 }
 //end mission block
+
+//team block
+.team{
+  background: $bg;
+}
+.team__inner{
+  padding: 50px 46px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-weight: 300;
+  color: $grey-text;
+  &-title {
+    font-weight: 500;
+    font-size: 55px;
+    color: $g-light;
+    margin-bottom: 78px;
+  }
+  &-content {
+    display: flex;
+    //justify-content: space-between;
+    align-items: center;
+  }
+  &-png{
+    width: 287px;
+    height: 380px;
+  }
+  &-item + .team__inner-item{
+    margin-left: 124px;
+  }
+}
+.team__item-name{
+  margin-top: 20px;
+  font-size: 32px;
+  margin-bottom: 14px;
+}
+.team__item-description{
+  max-width: 280px;
+}
+//end team block
+
