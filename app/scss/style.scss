@@ -2,13 +2,10 @@
 @import "_vars";
 @import "_global";
 
-body{
-  background: #252626 url(../images/body-bg.png);
-  background-repeat: no-repeat;
-  background-size: 1440px;
-  background-position: center;
-  max-height: 850px;
+body {
+  background-color: $bg;
 }
+
 //header
 .header {
   height: 100px;
@@ -144,9 +141,18 @@ body{
 //end header
 
 //main page
+.main__page {
+  margin: 0 auto;
+  max-width: 1400px;
+  //width: 100%;
+  overflow: hidden;
+  background: $bg url(../images/body-bg.png) center no-repeat;
+  background-size: cover;
+  max-height: 850px;
+}
 .main__inner {
   padding-top: 200px;
-  padding-bottom: 140px;
+  padding-bottom: 100px;
 }
 
 .main__title {
@@ -175,29 +181,31 @@ body{
   padding: 8px;
   border: 1px solid rgba(220, 172, 100, 0.26);
   box-shadow: 0 0 10px #DCAC64;
-  max-width: 412px;
+  width: 418px;
   border-radius: 70px;
   margin-bottom: 10px;
 }
 
 .main__button {
   background: $g-dark;
+  width: 400px;
+  height: 66px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   border-radius: 70px;
-  span{
-    display: block;
+
+  a {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     color: $grey-text;
     font-size: 21px;
-    padding: 20px 74px;
+    padding: 0 54px;
 
   }
 }
 
 .contact__details {
-  max-width: 310px;
+  max-width: 290px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -206,26 +214,28 @@ body{
 }
 
 //end main page
+//
 
 //clients page
 .clients {
+  max-width: 1400px;
   margin: 0 auto;
-  max-width: 1440px;
-  background-color: $bg;
   box-shadow: inset 0 0 5px 5px rgba(0, 0, 0, 0.8);
   text-align: center;
 }
 
 .clients__inner {
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 
-.clients__item{
+.clients__item {
   margin-top: 68px;
 }
+
 .clients__title {
   font-family: 'Montserrat Alternates', sans-serif;
   font-weight: 300;
@@ -233,18 +243,20 @@ body{
   color: $g-light;
   //line-height: 88px;
   //margin-bottom: 16px;
-  & + .clients__title{
+  & + .clients__title {
     //margin-bottom: 4px;
   }
 }
-.clients__description{
+
+.clients__description {
   font-family: 'Montserrat Alternates', sans-serif;
   font-weight: 300;
   line-height: 23px;
   font-size: 18px;
   color: $g-light;
   margin-bottom: 67px;
-  span{
+
+  span {
     display: block;
   }
 }
@@ -252,24 +264,25 @@ body{
 //end clients page
 
 //mission block
-.mission{
+.mission {
   .container {
     position: relative;
   }
 }
-.mission__inner{
+
+.mission__inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #212121;
-  &-bg{
-    position: sticky;
+
+  &-bg {
     min-width: 493px;
     height: 991px;
     left: 0;
     overflow: hidden;
     //z-index: 2;
-    .bg-image{
+    .bg-image {
       background: rgba(37, 38, 38, 0.5);
       min-height: 991px;
       position: absolute;
@@ -277,9 +290,11 @@ body{
       top: 0;
     }
   }
-  &-content{
+
+  &-content {
     padding: 62px 103px 25px 26px;
   }
+
   &-item {
     width: 717px;
     height: 100px;
@@ -289,8 +304,9 @@ body{
     align-items: center;
     //text-align: center;
   }
-  &-title{
-    font-family: Montserrat, sans-serif;
+
+  &-title {
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 45px;
     line-height: 55px;
@@ -298,6 +314,7 @@ body{
     color: $g-light;
     margin-bottom: 84px;
   }
+
   &-icon {
     display: inline-block;
     border: $g-light;
@@ -307,23 +324,25 @@ body{
     background-color: $g-light;
     margin-right: 37px;
     //text-align: center;
-    img{
+    img {
       margin: 10px;
     }
   }
-  &-text{
+
+  &-text {
     display: inline-block;
     max-width: 547px;
     height: 120px;
     padding: 10px 40px;
     border: 4px solid $g-light;
     border-radius: 180px;
-    font-family: Montserrat, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 16px;
     color: $grey-text;
   }
-  .small__description{
+
+  .small__description {
     padding: 20px 40px;
   }
 }
@@ -331,19 +350,22 @@ body{
 //end mission block
 
 //callback block
-.callback{
-  background-image: url(../images/callback-bg.png);
-  background-size: 1440px;
-  background-repeat: no-repeat;
-  background-position: center;
+.callback {
+  margin: 0 auto;
+  background: url(../images/callback-bg.png) center no-repeat;
+  background-size: cover;
+  max-width: 1400px;
   max-height: 968px;
+  overflow: hidden;
 }
 
-.callback__inner{
+.callback__inner {
   margin-left: 66px;
 }
-.callback__main{
+
+.callback__main {
   font-family: 'Montserrat', sans-serif;
+
   &-title {
     font-weight: 400;
     font-size: 55px;
@@ -353,13 +375,14 @@ body{
     padding-top: 116px;
     margin-bottom: 55px;
   }
+
   form {
-    input{
+    input {
       display: block;
       font-weight: 300;
       color: $grey-text;
       outline: none;
-      padding: 19px 33px;
+      padding: 8px 33px;
       font-size: 16px;
       width: 476px;
       height: 58px;
@@ -369,83 +392,198 @@ body{
       border-radius: 46px;
     }
   }
-  //.callback__button-border{
-  //  border: 1px solid rgba(220, 172, 100, 0.26);
-  //  width: 330px;
-  //  height: 62px;
-  //  border-radius: 70px;
-  //}
-  button {
-    background-color: transparent;
-    height: 62px;
-    outline: none;
-    border: none;
-    box-shadow: 0 0 10px $g-dark;
+
+  .callback__button-border{
+    border: 1px solid rgba(220, 172, 100, 0.26);
+    box-shadow: 0 0 4px $g-dark;
+    width: 333px;
+    padding: 5px;
     border-radius: 70px;
     margin-bottom: 10px;
+  }
+  button {
+    width: 320px;
+    background-color: $g-dark;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    height: 52px;
+    outline: none;
+    border-radius: 70px;
   }
   .callback__button-text {
     color: $grey-text;
     font-weight: 500;
     font-size: 16px;
-    padding: 16px 114px;
-    border-radius: 70px;
-    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    background: $g-dark;
   }
-  .contact__details{
+  .contact__details {
     margin-left: 15px;
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
     padding-bottom: 24px;
   }
-  &-transition{
+
+  &-transition {
     width: 1440px;
     height: 78px;
     background: linear-gradient(180deg, rgba(58, 58, 58, 0) 24.48%, #252525 100%);
     transform: matrix(-1, 0, 0, 1, 0, 0);
   }
 }
+
 //end mission block
 
 //team block
-.team{
+.team {
   background: $bg;
 }
-.team__inner{
+
+.team__inner {
   padding: 50px 46px;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   font-weight: 300;
   color: $grey-text;
+
   &-title {
     font-weight: 500;
     font-size: 55px;
     color: $g-light;
     margin-bottom: 78px;
   }
+
   &-content {
     display: flex;
     //justify-content: space-between;
     align-items: center;
   }
-  &-png{
+
+  &-png {
     width: 287px;
     height: 380px;
   }
-  &-item + .team__inner-item{
+
+  &-item + .team__inner-item {
     margin-left: 124px;
   }
 }
-.team__item-name{
+
+.team__item-name {
   margin-top: 20px;
   font-size: 32px;
   margin-bottom: 14px;
 }
-.team__item-description{
+
+.team__item-description {
   max-width: 280px;
 }
+
 //end team block
 
+//footer block
+.footer__inner {
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &-item {
+    max-width: 350px;
+
+    .footer__logo {
+      img {
+        margin-bottom: 20px;
+        width: 304px;
+        height: 100px;
+      }
+    }
+
+    .footer__title {
+      font-size: 36px;
+      color: $grey-text;
+      margin-bottom: 14px;
+    }
+    .footer__title-contacts{
+      font-size: 26px;
+      font-weight: 700;
+      color: $g-dark;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      font-size: 24px;
+      color: $grey-text;
+      margin-bottom: 14px;
+
+      span {
+        display: block;
+      }
+    }
+
+    .footer__text {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-style: italic;
+      font-size: 24px;
+      color: rgba(255, 192, 97, 0.6);
+    }
+    form{
+      input {
+        background-color: $bg;
+        margin-left: 13px;
+        width: 300px;
+        height: 54px;
+        padding: 8px 20px;
+        font-weight: 400;
+        border: 4px solid $g-light;
+        border-radius: 46px;
+        color: #FFFFFF;
+        text-align: center;
+        display: block;
+        margin-bottom: 14px;
+      }
+      button {
+        background-color: $g-dark;
+        border: 0.666667px solid rgba(0, 0, 0, 0.2);
+        outline: none;
+        border-radius: 47px;
+      }
+    }
+  }
+}
+.footer__button-text {
+  padding: 13px 94px;
+  color: $grey-text;
+  font-weight: 500;
+  font-size: 16px;
+}
+.footer__button-border{
+  border: 0.6px solid rgba(220, 172, 100, 0.26);
+  box-shadow: 0 0 6.66667px $g-dark;
+  width: 305px;
+  padding: 5px;
+  border-radius: 47px;
+  margin-left: 13px;
+}
+.footer-copy{
+  .container{
+    position: relative;
+    height: 64px;
+  }
+  .copy__inner{
+    position: absolute;
+    right: 15px;
+    bottom: 18px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #56462D;
+  }
+}
