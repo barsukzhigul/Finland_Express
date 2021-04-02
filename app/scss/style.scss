@@ -26,6 +26,21 @@ body {
   top: 0;
   color: $g-dark;
   font-size: 20px;
+  .header__menu-hamburger {
+    display: none;
+    width: 24px;
+  }
+  .header__menu-row {
+
+    width: 100%;
+    background-color: $g-light;
+    height: 3px;
+    margin-bottom: 5px;
+  }
+  .header__menu-row:nth-child(3){
+    width: 75%;
+    margin-left: auto;
+  }
 
   &-logo {
     padding: 17px 0;
@@ -51,7 +66,7 @@ body {
   align-items: center;
   max-width: 963px;
   min-height: 56px;
-
+  position: relative;
   &-btn {
     padding-bottom: 15px;
 
@@ -99,14 +114,13 @@ body {
     position: absolute;
     padding-bottom: 11px;
     width: 230px;
-    top: 26px;
+    top: 23px;
     right: 0;
     transition: all .3s;
 
     div {
       font-family: 'Roboto', sans-serif;
       font-size: 15px;
-      //display: none;
       height: 0;
       overflow: hidden;
       cursor: default;
@@ -118,7 +132,7 @@ body {
     }
 
     &:hover {
-      top: 14px;
+      top: 10px;
 
       a {
         transition: all .3s;
@@ -126,7 +140,6 @@ body {
       }
 
       div {
-        //display: block;
         height: 18px;
         transition: all .2s;
         overflow: visible;
@@ -144,10 +157,8 @@ body {
 .main__page {
   margin: 0 auto;
   max-width: 1440px;
-  //width: 100%;
   overflow: hidden;
   background: $bg url(../images/body-bg.png) center no-repeat;
-  background-size: cover;
   max-height: 850px;
 }
 .main__inner {
@@ -163,6 +174,7 @@ body {
   color: $g-light;
   max-width: 900px;
   padding-bottom: 40px;
+  object-fit: contain;
 }
 
 .main__info {
@@ -185,7 +197,6 @@ body {
   display: inline-block;
   padding: 8px;
   border: 1px solid transparent;
-  //box-shadow: 0 0 10px #DCAC64;
   width: 418px;
   border-radius: 70px;
   margin-bottom: 10px;
@@ -251,10 +262,7 @@ body {
   font-weight: 300;
   font-size: 70px;
   color: $g-light;
-  //line-height: 88px;
-  //margin-bottom: 16px;
   & + .clients__title {
-    //margin-bottom: 4px;
   }
 }
 
@@ -291,7 +299,6 @@ body {
     height: 991px;
     left: 0;
     overflow: hidden;
-    //z-index: 2;
     .bg-image {
       background: rgba(37, 38, 38, 0.5);
       min-height: 991px;
@@ -310,7 +317,6 @@ body {
     height: 100px;
     margin-bottom: 100px;
     display: flex;
-    //justify-content: space-around;
     align-items: center;
     //text-align: center;
   }
@@ -333,7 +339,6 @@ body {
     border-radius: 50%;
     background-color: $g-light;
     margin-right: 37px;
-    //text-align: center;
     img {
       margin: 10px;
     }
@@ -363,7 +368,6 @@ body {
 .callback {
   margin: 0 auto;
   background: url(../images/callback-bg.png) center no-repeat;
-  background-size: cover;
   max-width: 1440px;
   max-height: 968px;
   overflow: hidden;
@@ -484,7 +488,6 @@ body {
 
   &-content {
     display: flex;
-    //justify-content: space-between;
     align-items: center;
   }
 
@@ -625,4 +628,4 @@ body {
     color: #56462D;
   }
 }
-@import "_media";
+@import "media";
