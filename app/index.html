@@ -71,8 +71,8 @@
                     <span>Более 142 довольных клиентов</span>
                 </div>
                 <div class="button__border">
-                    <button href="#" class="main__button">
-                        <a href="#">Рассчитать стоимость</a>
+                    <button class="main__button">
+                        <a href="#callback">Рассчитать стоимость</a>
                     </button>
                 </div>
                 <div class="contact__details">
@@ -164,15 +164,27 @@
                         Мы поможем выбрать для Вас самую подходящую программу
                     </header>
                     <div class="callback__main-form">
-                        <form action="">
-                            <input type="email" placeholder="Ваш email">
-                            <input type="tel" placeholder="Ваш телефон">
-                            <input type="text" placeholder="Ваше имя">
+                        <form action="#" id="callback" class="callback__form">
+                            <div class="callback__form-item">
+                                <label for="callback" class="form__label"></label>
+                                    <input id="formEmail" type="email" name="email" placeholder="Ваш email" class="callback__form-input">
+
+                            </div>
+                            <div class="callback__form-item">
+                                <label for="callback" class="form__label"></label>
+                                    <input id="formTel" type="tel" name="tel" placeholder="Ваш телефон" class="callback__form-input">
+
+                            </div>
+                            <div class="callback__form-item">
+                                <label for="callback" class="form__label"></label>
+                                    <input id="formName" type="text" name="Name" placeholder="Ваше имя" class="callback__form-input">
+
+                            </div>
                             <div class="callback__button-border">
                                 <button type="submit" class="callback__main-submit">
-                                    <a href="#" class="callback__button-text">
+                                    <span class="callback__button-text">
                                         Отправить
-                                    </a>
+                                    </span>
                                 </button>
                             </div>
                         </form>
@@ -264,9 +276,9 @@
                             <input type="tel" placeholder="Ваш Номер">
                             <div class="footer__button-border">
                                 <button class="footer__button-submit">
-                                    <a href="" class="footer__button-text">
+                                    <span class="footer__button-text">
                                         Отправить
-                                    </a>
+                                    </span>
                                 </button>
                             </div>
                         </form>

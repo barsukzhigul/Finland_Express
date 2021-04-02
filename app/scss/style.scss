@@ -143,7 +143,7 @@ body {
 //main page
 .main__page {
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: 1440px;
   //width: 100%;
   overflow: hidden;
   background: $bg url(../images/body-bg.png) center no-repeat;
@@ -151,6 +151,7 @@ body {
   max-height: 850px;
 }
 .main__inner {
+  position: relative;
   padding-top: 200px;
   padding-bottom: 100px;
 }
@@ -170,7 +171,7 @@ body {
   font-size: 32px;
   color: $grey-text;
   line-height: 40px;
-  margin-bottom: 100px;
+  margin-bottom: 190px;
 
   span {
     display: block;
@@ -178,14 +179,23 @@ body {
 }
 
 .button__border {
+  position: absolute;
+  left: 5px;
+  bottom: 130px;
+  display: inline-block;
   padding: 8px;
-  border: 1px solid rgba(220, 172, 100, 0.26);
-  box-shadow: 0 0 10px #DCAC64;
+  border: 1px solid transparent;
+  //box-shadow: 0 0 10px #DCAC64;
   width: 418px;
   border-radius: 70px;
   margin-bottom: 10px;
+  transition: all .2s;
 }
+.button__border:hover{
+  border: 1px solid rgba(220, 172, 100, 0.26);
+  box-shadow: 0 0 10px $g-dark;
 
+}
 .main__button {
   background: $g-dark;
   width: 400px;
@@ -193,13 +203,13 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   border-radius: 70px;
-
+  outline: none;
   a {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     color: $grey-text;
     font-size: 21px;
-    padding: 0 54px;
+    padding: 19px 70px;
 
   }
 }
@@ -218,7 +228,7 @@ body {
 
 //clients page
 .clients {
-  max-width: 1400px;
+  max-width: 1440px;
   margin: 0 auto;
   box-shadow: inset 0 0 5px 5px rgba(0, 0, 0, 0.8);
   text-align: center;
@@ -354,7 +364,7 @@ body {
   margin: 0 auto;
   background: url(../images/callback-bg.png) center no-repeat;
   background-size: cover;
-  max-width: 1400px;
+  max-width: 1440px;
   max-height: 968px;
   overflow: hidden;
 }
@@ -375,9 +385,12 @@ body {
     padding-top: 116px;
     margin-bottom: 55px;
   }
+  &-form{
+    position: relative;
+  }
+  .callback__form {
 
-  form {
-    input {
+    &-input {
       display: block;
       font-weight: 300;
       color: $grey-text;
@@ -390,16 +403,32 @@ body {
       background-color: $bg;
       border: 3px solid $grey-contacts;
       border-radius: 46px;
+      transition: all .3s;
+
+      &:focus {
+        box-shadow: 0 0 19px $bg;
+      }
+
+      &_error {
+        box-shadow: 0 0 19px tomato;
+      }
     }
   }
 
+
+
   .callback__button-border{
-    border: 1px solid rgba(220, 172, 100, 0.26);
-    box-shadow: 0 0 4px $g-dark;
+    position: absolute;
+    border: 1px solid transparent;
     width: 333px;
     padding: 5px;
     border-radius: 70px;
     margin-bottom: 10px;
+    transition: all .2s;
+  }
+  .callback__button-border:hover{
+    border: 1px solid rgba(220, 172, 100, 0.26);
+    box-shadow: 0 0 4px $g-dark;
   }
   button {
     width: 320px;
@@ -408,6 +437,7 @@ body {
     height: 52px;
     outline: none;
     border-radius: 70px;
+    cursor: pointer;
   }
   .callback__button-text {
     color: $grey-text;
@@ -415,6 +445,7 @@ body {
     font-size: 16px;
   }
   .contact__details {
+    margin-top: 110px;
     margin-left: 15px;
     font-weight: 400;
     font-size: 12px;
@@ -548,29 +579,36 @@ body {
         text-align: center;
         display: block;
         margin-bottom: 14px;
+        outline: none;
       }
       button {
+        height: 48px;
+        width: 292px;
         background-color: $g-dark;
         border: 0.666667px solid rgba(0, 0, 0, 0.2);
         outline: none;
         border-radius: 47px;
+        cursor: pointer;
       }
     }
   }
 }
 .footer__button-text {
-  padding: 13px 94px;
   color: $grey-text;
   font-weight: 500;
   font-size: 16px;
 }
 .footer__button-border{
-  border: 0.6px solid rgba(220, 172, 100, 0.26);
-  box-shadow: 0 0 6.66667px $g-dark;
-  width: 305px;
+  border: 0.6px solid transparent;
+  width: 304px;
   padding: 5px;
   border-radius: 47px;
   margin-left: 13px;
+  transition: all .2s;
+}
+.footer__button-border:hover{
+  border: 0.6px solid rgba(220, 172, 100, 0.26);
+  box-shadow: 0 0 6.66667px $g-dark;
 }
 .footer-copy{
   .container{
@@ -587,3 +625,4 @@ body {
     color: #56462D;
   }
 }
+@import "_media";
