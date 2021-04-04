@@ -26,10 +26,12 @@ body {
   top: 0;
   color: $g-dark;
   font-size: 20px;
+
   .header__menu-hamburger {
     display: none;
     width: 24px;
   }
+
   .header__menu-row {
 
     width: 100%;
@@ -37,7 +39,8 @@ body {
     height: 3px;
     margin-bottom: 5px;
   }
-  .header__menu-row:nth-child(3){
+
+  .header__menu-row:nth-child(3) {
     width: 75%;
     margin-left: auto;
   }
@@ -67,6 +70,7 @@ body {
   max-width: 963px;
   min-height: 56px;
   position: relative;
+
   &-btn {
     padding-bottom: 15px;
 
@@ -161,6 +165,7 @@ body {
   background: $bg url(../images/body-bg.png) center no-repeat;
   max-height: 850px;
 }
+
 .main__inner {
   position: relative;
   padding-top: 200px;
@@ -202,11 +207,13 @@ body {
   margin-bottom: 10px;
   transition: all .2s;
 }
-.button__border:hover{
+
+.button__border:hover {
   border: 1px solid rgba(220, 172, 100, 0.26);
   box-shadow: 0 0 10px $g-dark;
 
 }
+
 .main__button {
   background: $g-dark;
   width: 400px;
@@ -215,6 +222,7 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   border-radius: 70px;
   outline: none;
+
   a {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -262,6 +270,7 @@ body {
   font-weight: 300;
   font-size: 70px;
   color: $g-light;
+
   & + .clients__title {
   }
 }
@@ -299,6 +308,7 @@ body {
     height: 991px;
     left: 0;
     overflow: hidden;
+
     .bg-image {
       background: rgba(37, 38, 38, 0.5);
       min-height: 991px;
@@ -339,6 +349,7 @@ body {
     border-radius: 50%;
     background-color: $g-light;
     margin-right: 37px;
+
     img {
       margin: 10px;
     }
@@ -356,9 +367,11 @@ body {
     font-size: 16px;
     color: $grey-text;
   }
-  &-mobile{
+
+  &-mobile {
     display: none;
   }
+
   .small__description {
     padding: 20px 40px;
   }
@@ -391,9 +404,11 @@ body {
     padding-top: 116px;
     margin-bottom: 55px;
   }
-  &-form{
+
+  &-form {
     position: relative;
   }
+
   .callback__form {
 
     &-input {
@@ -422,8 +437,7 @@ body {
   }
 
 
-
-  .callback__button-border{
+  .callback__button-border {
     position: absolute;
     border: 1px solid transparent;
     width: 333px;
@@ -432,10 +446,12 @@ body {
     margin-bottom: 10px;
     transition: all .2s;
   }
-  .callback__button-border:hover{
+
+  .callback__button-border:hover {
     border: 1px solid rgba(220, 172, 100, 0.26);
     box-shadow: 0 0 4px $g-dark;
   }
+
   button {
     width: 320px;
     background-color: $g-dark;
@@ -445,11 +461,13 @@ body {
     border-radius: 70px;
     cursor: pointer;
   }
+
   .callback__button-text {
     color: $grey-text;
     font-weight: 500;
     font-size: 16px;
   }
+
   .contact__details {
     margin-top: 110px;
     margin-left: 15px;
@@ -544,16 +562,19 @@ body {
       color: $grey-text;
       margin-bottom: 14px;
     }
-    .footer__title-contacts{
+
+    .footer__title-contacts {
       font-size: 26px;
       font-weight: 700;
       color: $g-dark;
     }
+
     ul {
       list-style: none;
       margin: 0;
       padding: 0;
     }
+
     li {
       font-size: 24px;
       color: $grey-text;
@@ -571,7 +592,8 @@ body {
       font-size: 24px;
       color: rgba(255, 192, 97, 0.6);
     }
-    form{
+
+    form {
       input {
         background-color: $bg;
         margin-left: 13px;
@@ -587,6 +609,7 @@ body {
         margin-bottom: 14px;
         outline: none;
       }
+
       button {
         height: 48px;
         width: 292px;
@@ -599,12 +622,14 @@ body {
     }
   }
 }
+
 .footer__button-text {
   color: $grey-text;
   font-weight: 500;
   font-size: 16px;
 }
-.footer__button-border{
+
+.footer__button-border {
   border: 0.6px solid transparent;
   width: 304px;
   padding: 5px;
@@ -612,16 +637,19 @@ body {
   margin-left: 13px;
   transition: all .2s;
 }
-.footer__button-border:hover{
+
+.footer__button-border:hover {
   border: 0.6px solid rgba(220, 172, 100, 0.26);
   box-shadow: 0 0 6.66667px $g-dark;
 }
-.footer-copy{
-  .container{
+
+.footer-copy {
+  .container {
     position: relative;
     height: 64px;
   }
-  .copy__inner{
+
+  .copy__inner {
     position: absolute;
     right: 15px;
     bottom: 18px;
@@ -631,4 +659,5 @@ body {
     color: #56462D;
   }
 }
+
 @import "media";
