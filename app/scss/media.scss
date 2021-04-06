@@ -38,8 +38,7 @@
       }
 
       &-number {
-        top: 22px;
-        right: 20px;
+
 
         a {
           font-size: 26px;
@@ -67,7 +66,10 @@
       }
 
     }
-
+.header__menu-number{
+  top: 22px;
+  right: -260px;
+}
   }
   .clients__inner {
     justify-content: space-around;
@@ -110,15 +112,16 @@
     }
 
     .header__menu {
+      margin-left: 0;
       &-contacts {
-        margin-left: 0px;
+        margin-left: 6px;
       }
 
       &-btn {
         padding-bottom: 12px;
 
         & li + li {
-          margin-left: 14px;
+          margin-left: 12px;
         }
 
         & li {
@@ -127,8 +130,8 @@
       }
 
       .header__menu-address::before {
-        left: 12px;
-        top: 18px;
+        left: -30px;
+        top: 0;
       }
 
       &-adress {
@@ -138,8 +141,7 @@
       }
 
       &-number {
-        top: 20px;
-        right: 24px;
+
 
         .header__number-a {
           display: block;
@@ -171,7 +173,10 @@
       }
 
     }
-
+.header__menu-number{
+  top: 20px;
+  right: -240px;
+}
   }
   .main__title {
     max-width: 580px;
@@ -339,7 +344,7 @@
       }
 
       .header__menu-address::before {
-        left: -16px;
+        left: -28px;
         top: -3px;
       }
 

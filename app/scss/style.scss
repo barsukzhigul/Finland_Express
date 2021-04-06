@@ -97,9 +97,8 @@ body {
   &-address {
     font-size: 17px;
     padding-bottom: 13px;
-    margin-right: 260px;
-    position: static;
-    top: 13px;
+    margin: auto;
+    position: relative;
 
     &::before {
       content: '';
@@ -107,8 +106,7 @@ body {
       width: 23px;
       height: 36px;
       position: absolute;
-      top: 19px;
-      left: 8px;
+      left: -30px;
     }
   }
 
@@ -119,7 +117,7 @@ body {
     padding-bottom: 11px;
     width: 230px;
     top: 23px;
-    right: 0;
+    //right: 0;
     transition: all .3s;
 
     img {
