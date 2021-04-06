@@ -50,3 +50,10 @@
 //         input.classList.remove('_error');
 //     }
 // });
+// $(function () {
+//
+//     $('.header__menu-hamburger').on('click', function () {
+//         $('.header__menu').slideToggle();
+//     });
+//
+// });

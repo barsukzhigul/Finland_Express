@@ -122,6 +122,10 @@ body {
     right: 0;
     transition: all .3s;
 
+    img {
+      display: none;
+    }
+
     div {
       font-family: 'Roboto', sans-serif;
       font-size: 15px;
@@ -292,6 +296,7 @@ body {
 
 //mission block
 .mission {
+
   .container {
     position: relative;
   }
@@ -608,6 +613,10 @@ body {
         display: block;
         margin-bottom: 14px;
         outline: none;
+
+        &:focus {
+          box-shadow: 0 0 10px $g-dark;
+        }
       }
 
       button {

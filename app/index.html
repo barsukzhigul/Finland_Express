@@ -54,9 +54,10 @@
                             </a>
                         </li>
                         <li class="header__menu-number">
-                            <a href="tel:81234567890">
+                            <a href="tel:81234567890" class="header__number-a">
                                 8 (123) 456-78-90
                             </a>
+                            <a href="tel:81234567890"><img src="images/icons/phone-btn.svg" alt="" class="header__number-img"></a>
                             <div>Заказать обратный звонок</div>
                         </li>
                     </ul>
@@ -286,9 +287,11 @@
                         <div class="footer__title footer__title-contacts">
                             Оставьте свои контакты:
                         </div>
-                        <form action="">
-                            <input type="text" placeholder="Ваше имя">
-                            <input type="tel" placeholder="Ваш Номер">
+                        <form action="#" id="footer__callback">
+                            <label for="footer__callback" class="footer__label"></label>
+                            <input id="footerName" type="text" name="Name" placeholder="Ваше имя">
+                            <label for="footer__callback" class="footer__label"></label>
+                            <input id="footerTel" type="tel" name="Tel" placeholder="Ваш Номер">
                             <div class="footer__button-border">
                                 <button class="footer__button-submit">
                                     <span class="footer__button-text">
