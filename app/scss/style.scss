@@ -30,12 +30,13 @@ body {
   .header__menu-hamburger {
     display: none;
     width: 24px;
+    height: 34px;
   }
 
   .header__menu-row {
 
     width: 100%;
-    background-color: $g-light;
+    background-color: $g-dark;
     height: 3px;
     margin-bottom: 5px;
   }
