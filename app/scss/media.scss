@@ -703,6 +703,7 @@
   .header__inner {
     width: 100%;
 
+
     &-logo {
       margin: 0;
     }
@@ -739,6 +740,14 @@
 
       .header__number-img {
         display: block;
+      }
+      &:hover{
+        a{
+          border: none;
+        }
+      }
+      div {
+        display: none;
       }
     }
   }

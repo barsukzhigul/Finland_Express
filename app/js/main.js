@@ -1,4 +1,27 @@
-const element = document.querySelector("#footer__callback");
-element.onclick = async()=>{
-    console.log(await fetch("/", {method:"POST", body:JSON.stringify({})}))
+// const hamburger = document.querySelector("#hamburger");
+const menu = document.querySelector(".menu")
+const hamburger = document.querySelector(".header__menu-hamburger")
+const xIcon = document.querySelector(".xIcon")
+const menuIcon = document.querySelector(".ham")
+
+hamburger.addEventListener("click", toggleMenu)
+
+function toggleMenu() {
+    if (menu.classList.contains("showMenu")) {
+        menu.classList.remove("showMenu");
+        xIcon.style.display = "none";
+        menuIcon.style.display = "block";
+    } else {
+        menu.classList.add("showMenu");
+        xIcon.style.display = "block";
+        menuIcon.style.display = "none";
+    }
 }
+
+const menuLinks = document.querySelectorAll(".menuLink")
+
+menuLinks.forEach(
+    function (menuLink) {
+        menuLink.addEventListener("click", toggleMenu)
+    }
+)

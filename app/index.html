@@ -16,10 +16,29 @@
 <header class="header">
     <div class="container">
         <div class="header__inner">
-            <div class="header__menu-hamburger">
-                <div class="header__menu-row"></div>
-                <div class="header__menu-row"></div>
-                <div class="header__menu-row"></div>
+            <div id="hamburger" class="header__menu-hamburger">
+                <div class="ham">
+                    <div class="header__menu-row"></div>
+                    <div class="header__menu-row"></div>
+                    <div class="header__menu-row"></div>
+                </div>
+                <span class="xIcon">
+                    <img src="images/icons/Close.svg" alt="">
+                </span>
+            </div>
+            <div class="menu">
+                <ul class="hamburgerMenu">
+                    <li><a class="hamburgerLink" href="#main-info">Главная</a></li>
+                    <li><a class="hamburgerLink" href="#info">Информация</a></li>
+                    <li><a class="hamburgerLink" href="#footer_contacts">Контакты</a></li>
+                </ul>
+                <a class="hamburgerLink hamburgerPhone" href="tel:81234567890">8 (123) 456-78-90</a>
+                <a href="#service" class="hamburgerCallback">
+                    Закажите звонок
+                </a>
+                <div class="hamburgerDetails">
+                    Менеджер свяжется с Вами в течение 5 минут
+                </div>
             </div>
             <div class="header__inner-logo">
                 <a href="#">
@@ -30,17 +49,17 @@
                 <div class="header__menu-btn">
                     <ul>
                         <li>
-                            <a href="#">
+                            <a href="#main-info">
                                 Главная
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#info">
                                 Информация
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#service">
                                 Наши услуги
                             </a>
                         </li>
@@ -49,7 +68,7 @@
                 <div class="header__menu-contacts">
                     <ul>
                         <li class="header__menu-address">
-                            <a href="#">
+                            <a href="https://goo.gl/maps/oSAdzHD1NkqTVeyr8" target="_blank">
                                 39 Tilkankatu st <span>00300 Helsinki</span>
                             </a>
                         </li>
@@ -57,7 +76,8 @@
                             <a href="tel:81234567890" class="header__number-a">
                                 8 (123) 456-78-90
                             </a>
-                            <a href="tel:81234567890"><img src="images/icons/phone-btn.svg" alt="" class="header__number-img"></a>
+                            <a href="tel:81234567890"><img src="images/icons/phone-btn.svg" alt=""
+                                                           class="header__number-img"></a>
                             <div>Заказать обратный звонок</div>
                         </li>
                     </ul>
@@ -67,7 +87,7 @@
     </div>
 </header>
 <main>
-    <section class="main__page">
+    <section id="main-info" class="main__page">
         <div class="container">
             <div class="main__inner">
                 <div class="main__title">
@@ -120,7 +140,7 @@
             </div>
         </div>
     </section>
-    <section class="mission">
+    <section id="info" class="mission">
         <div class="container">
             <div class="mission__inner">
                 <section class="mission__inner-bg">
@@ -172,7 +192,7 @@
             </div>
         </div>
     </section>
-    <section class="callback">
+    <section id="service" class="callback">
         <div class="container">
             <div class="callback__inner">
                 <article class="callback__main">
@@ -183,17 +203,20 @@
                         <form method="POST" id="callback" class="callback__form" action="form.php">
                             <div class="callback__form-item">
                                 <label for="callback" class="form__label"></label>
-                                    <input id="formEmail" type="email" name="email" placeholder="Ваш email" class="callback__form-input">
+                                <input id="formEmail" type="email" name="email" placeholder="Ваш email"
+                                       class="callback__form-input">
 
                             </div>
                             <div class="callback__form-item">
                                 <label for="callback" class="form__label"></label>
-                                    <input id="formTel" type="tel" name="tel" placeholder="Ваш телефон" class="callback__form-input">
+                                <input id="formTel" type="tel" name="tel" placeholder="Ваш телефон"
+                                       class="callback__form-input">
 
                             </div>
                             <div class="callback__form-item">
                                 <label for="callback" class="form__label"></label>
-                                    <input id="formName" type="text" name="Name" placeholder="Ваше имя" class="callback__form-input">
+                                <input id="formName" type="text" name="Name" placeholder="Ваше имя"
+                                       class="callback__form-input">
 
                             </div>
                             <div class="callback__button-border">
@@ -271,7 +294,7 @@
                             Мы помогаем тысячам людей с получением документов для новой жизни в Финляндии
                         </div>
                     </div>
-                    <div class="footer__content-item">
+                    <div  id="footer_contacts" class="footer__content-item">
                         <div class="footer__title">
                             Наши контакты
                         </div>
