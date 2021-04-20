@@ -25,3 +25,9 @@ menuLinks.forEach(
         menuLink.addEventListener("click", toggleMenu)
     }
 )
+
+const about = document.querySelector(".about")
+const aboutText = document.querySelector(".aboutText")
+const xMobile = document.querySelector(".xMobile")
+
+about.addEventListener("click", toggleAbout)
