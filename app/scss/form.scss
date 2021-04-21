@@ -1,0 +1,11 @@
+@import "_vars";
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: $bg;
+  font-size: 24px;
+  font-weight: 300;
+  font-style: italic;
+  color: $g-light;
+  text-align: center;
+}
