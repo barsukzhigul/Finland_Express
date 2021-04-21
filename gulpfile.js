@@ -40,6 +40,17 @@ gulp.task('media', function () {
         .pipe(browserSync.reload({stream: true}))
 })
 
+gulp.task('form', function () {
+    return gulp.src('app/scss/form.scss')
+        .pipe(sass({outputStyle: 'compressed'}))
+        .pipe(rename({suffix: '.min'}))
+        .pipe(autoprefixer({
+            overrideBrowserslist: ['last 8 versions']
+        }))
+        .pipe(gulp.dest('app/css'))
+        .pipe(browserSync.reload({stream: true}))
+})
+
 gulp.task('script', function(){
     return gulp.src([
         'node_modules/slick-carousel/slick/slick.js',
@@ -82,4 +93,4 @@ gulp.task('watch', function () {
     gulp.watch('app/js/main.js', gulp.parallel('scriptMinimize'))
 });
 
-gulp.task('default', gulp.parallel('style', 'scriptMinimize', 'script', 'media', 'sass', 'watch', 'browser-sync'))
+gulp.task('default', gulp.parallel('style', 'scriptMinimize', 'form', 'script', 'media', 'sass', 'watch', 'browser-sync'))

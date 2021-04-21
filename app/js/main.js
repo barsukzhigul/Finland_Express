@@ -1,4 +1,3 @@
-// const hamburger = document.querySelector("#hamburger");
 const menu = document.querySelector(".menu")
 const hamburger = document.querySelector(".header__menu-hamburger")
 const xIcon = document.querySelector(".xIcon")
