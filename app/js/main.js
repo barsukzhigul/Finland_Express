@@ -17,7 +17,7 @@ function toggleMenu() {
     }
 }
 
-const menuLinks = document.querySelectorAll(".menuLink")
+const menuLinks = document.querySelectorAll(".hamburgerLink")
 
 menuLinks.forEach(
     function (menuLink) {

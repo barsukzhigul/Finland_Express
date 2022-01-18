@@ -221,6 +221,7 @@
       width: 620px;
       border-radius: 180px;
     }
+
     &-mobile {
       display: none;
     }
@@ -705,11 +706,13 @@
       .header__number-img {
         display: block;
       }
-      &:hover{
-        a{
+
+      &:hover {
+        a {
           border: none;
         }
       }
+
       div {
         display: none;
       }
@@ -957,18 +960,21 @@
       height: 50px;
       top: -15px;
       left: -15px;
+
       img {
         margin: 5px;
         width: 40px;
         height: 40px;
       }
     }
-    .mission__inner{
-      .small__description{
+
+    .mission__inner {
+      .small__description {
         padding: 0;
       }
     }
-    .mission__inner-text{
+
+    .mission__inner-text {
       background: transparent;
       width: auto;
       height: auto;
@@ -1035,36 +1041,37 @@
     font-size: 32px;
     padding-bottom: 24px;
   }
-  .main__info{
+  .main__info {
     font-size: 22px;
     line-height: 28px;
   }
-  .button__border{
+  .button__border {
     max-width: 300px;
     position: static;
   }
 
-  .main__button{
-    max-width: 280px;
-    a{
+  .main__button {
+    max-width: 300px;
+
+    a {
       font-size: 16px;
       padding: 22px 40px;
     }
   }
-  .contact__details{
+  .contact__details {
     font-size: 12px;
     line-height: 16px;
   }
 
-.mission__inner-mobile{
-  font-size: 20px;
-  font-weight: 300;
-}
-  .team__inner-title{
+  .mission__inner-mobile {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .team__inner-title {
     font-size: 37px;
   }
-  .footer-copy{
-    .copy__inner{
+  .footer-copy {
+    .copy__inner {
       font-size: 16px;
     }
   }
@@ -1087,20 +1094,29 @@
     line-height: 36px;
     padding-top: 40px;
   }
-
+  .main__button {
+    a {
+      font-size: 18px;
+      padding: 10px;
+    }
+  }
 }
+
 @media only screen and (max-device-width: 385px) {
   .main__title {
     font-size: 30px;
   }
+  .main__button {
+    a {
+      font-size: 18px;
+      padding: 10px;
+    }
+  }
+
 }
+
 @media only screen and (max-device-width: 360px) {
   .main__title {
     font-size: 26px;
   }
-}
-
-@media only screen and (min-device-width: 320px) {
-
-
 }
